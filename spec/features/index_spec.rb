@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'index', :type => :feature do
+describe 'index', type: :feature do
   before do
     visit '/'
   end
@@ -8,11 +8,15 @@ describe 'index', :type => :feature do
   it 'has the correct title header' do
     expect(page).to have_selector 'h1'
     within 'h1' do
-      expect(page).to have_content /Hej Thomas/i
+      expect(page).to have_content 'Hej Thomas'
     end
   end
 
   it 'has a paragraph in there too' do
     expect(page).to have_selector 'p.doc'
+  end
+
+  it 'has an image' do
+    expect(page).to have_css 'img[src*="middleman-logo.svg"]'
   end
 end
