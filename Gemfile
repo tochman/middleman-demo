@@ -11,3 +11,12 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+gem 'cucumber'
+gem 'capybara'
+gem 'capybara-webkit'
+#gem 'poltergeist'
+gem 'pry'
+gem 'launchy'
+gem 'haml'
+#gem 'middleman-cucumber', github: 'tochman/middleman-cucumber'
+gem 'rspec'
